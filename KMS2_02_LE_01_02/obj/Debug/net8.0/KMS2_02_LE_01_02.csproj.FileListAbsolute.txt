@@ -1,0 +1,15 @@
+C:\SZF_CSharp\KMS2_02_LE_01_02\bin\Debug\net8.0\KMS2_02_LE_01_02.exe
+C:\SZF_CSharp\KMS2_02_LE_01_02\bin\Debug\net8.0\KMS2_02_LE_01_02.deps.json
+C:\SZF_CSharp\KMS2_02_LE_01_02\bin\Debug\net8.0\KMS2_02_LE_01_02.runtimeconfig.json
+C:\SZF_CSharp\KMS2_02_LE_01_02\bin\Debug\net8.0\KMS2_02_LE_01_02.dll
+C:\SZF_CSharp\KMS2_02_LE_01_02\bin\Debug\net8.0\KMS2_02_LE_01_02.pdb
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\KMS2_02_LE_01_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\KMS2_02_LE_01_02.AssemblyInfoInputs.cache
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\KMS2_02_LE_01_02.AssemblyInfo.cs
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\KMS2_02_LE_01_02.csproj.CoreCompileInputs.cache
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\KMS2_02_LE_01_02.sourcelink.json
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\KMS2_02_LE_01_02.dll
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\refint\KMS2_02_LE_01_02.dll
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\KMS2_02_LE_01_02.pdb
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\KMS2_02_LE_01_02.genruntimeconfig.cache
+C:\SZF_CSharp\KMS2_02_LE_01_02\obj\Debug\net8.0\ref\KMS2_02_LE_01_02.dll
