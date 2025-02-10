@@ -1,0 +1,58 @@
+﻿<Window x:Class="InvoiceCreatorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InvoiceCreatorApp"
+        xmlns:viewModels="clr-namespace:InvoiceCreatorApp.ViewModels"
+        mc:Ignorable="d"
+        Title="Invoice Creator" Height="450" Width="800" ResizeMode="NoResize">
+
+	<!-- Setzen des DataContext für das Fenster -->
+	<Window.DataContext>
+		<viewModels:InvoiceViewModel/>
+	</Window.DataContext>
+
+	<!-- Definieren eines Grids mit spezifischen Zeilen und Spalten -->
+	<Grid Margin="10">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
+		<!-- Benutzeroberfläche: Labels und TextBoxen -->
+		<!-- UpdateSourceTrigger=PropertyChanged für sofortige Aktualisierung -->
+		<Label Content="Firmenname:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+		<TextBox Text="{Binding CompanyName}" Grid.Row="0" Grid.Column="1" Margin="5" IsReadOnly="True"/> 
+
+		<Label Content="Kundenname:" Grid.Row="1" Grid.Column="0" Margin="5"/>
+		<TextBox Text="{Binding CustomerName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+		<Label Content="Kundennummer:" Grid.Row="2" Grid.Column="0" Margin="5"/>
+		<TextBox Text="{Binding CustomerNumber, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+		<Label Content="Warenbezeichnung:" Grid.Row="3" Grid.Column="0" Margin="5"/>
+		<TextBox Text="{Binding ProductName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="1" Margin="5"/>
+
+		<Label Content="Anzahl:" Grid.Row="4" Grid.Column="0" Margin="5"/>
+		<TextBox Text="{Binding Quantity, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Grid.Column="1" Margin="5"/>
+
+		<Label Content="Preis pro Stück:" Grid.Row="5" Grid.Column="0" Margin="5"/>
+		<TextBox Text="{Binding PricePerUnit, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5" Grid.Column="1" Margin="5"/>
+
+		<Label Content="Gesamtpreis:" Grid.Row="6" Grid.Column="0" Margin="5"/>
+		<TextBlock Text="{Binding TotalPrice, StringFormat={}{0:C}}" Grid.Row="6" Grid.Column="1" Margin="5" FontWeight="Bold"/>
+
+		<!-- Speicher-Button -->
+		<Button Content="Rechnung Speichern" Grid.Row="7" Grid.Column="1" Margin="5" HorizontalAlignment="Right" Click="SaveInvoiceButton_Click"/>
+	</Grid>
+</Window>
